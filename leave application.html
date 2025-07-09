@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: dodgerblue; /* Added dodger blue background color */
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .label {
+            font-weight: bold;
+            width: 150px;
+            display: inline-block;
+            color: #444;
+        }
+        input[type="text"], input[type="date"], input[type="number"] {
+            width: 50%;
+            height: 30px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        textarea {
+            width: 50%;
+            height: 100px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+        h2 {
+            color: #2f4f7f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Leave Application Form</h2>
+        <form>
+            <div>
+                <span class="label">From:</span>
+                <input type="text" name="name" placeholder="Enter your name">
+            </div>
+            <div>
+                <span class="label">Date:</span>
+                <input type="date" name="date">
+            </div>
+            <div>
+                <span class="label">To:</span>
+                <input type="text" name="manager" placeholder="Enter manager's name">
+            </div>
+            <div>
+                <span class="label">Subject:</span>
+                <input type="text" name="subject" placeholder="Enter subject">
+            </div>
+            <div>
+                <span class="label">Reason for Leave:</span>
+                <textarea name="reason" placeholder="Enter reason for leave"></textarea>
+            </div>
+            <div>
+                <span class="label">Number of Days:</span>
+                <input type="number" name="days" placeholder="Enter number of days">
+            </div>
+            <div>
+                <span class="label">Type of Leave:</span>
+                <input type="radio" name="leave_type" value="casual"> Casual
+                <input type="radio" name="leave_type" value="sick"> Sick
+                <input type="radio" name="leave_type" value="annual"> Annual
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <p><a href="Example.html"> Go Back</a></p>
+
+</body>
+</html>
